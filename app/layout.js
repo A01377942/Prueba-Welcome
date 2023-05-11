@@ -6,12 +6,6 @@ import { I18nextProvider } from "react-i18next";
 import global_es from '../public/traslations/es/global.json'
 import global_en from '../public/traslations/en/global.json'
 
-export const metadata = {
-  title: 'Explore the world as an International Travel Agent',
-  description: 'Become a travel agent and get great prices with Volindo. Discover a new way of traveling and save money on your next adventures.',
-  keywords: 'travel, internacional travel, airplane'
-}
-
 i18next.init({
   interpolation: { escapeValue: false },
   lng: localStorage.getItem('language') || 'en',

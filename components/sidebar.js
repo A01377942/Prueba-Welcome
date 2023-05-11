@@ -4,12 +4,12 @@ import { useTranslation } from 'react-i18next'
 import styles from '../styles/sidebar.module.css'
 
 import Clock from './Clock'
-import Date from './Date'
 import Image from 'next/image'
 
 const Sidebar = () => {
   const [t, i18n] = useTranslation("global")
   const [language, setLanguage] = useState(localStorage.getItem('language') || i18n.language);
+  
 
   function changeLanguage(lang) {
     i18n.changeLanguage(lang);
@@ -62,7 +62,7 @@ const Sidebar = () => {
                 <button className={styles.signin}>{t('buttonResponse')}</button>
                 <div className={styles.datetime}>
                     <Clock />
-                    <p className={styles.date}>Jueves, 28 Octubre</p>
+                    <p className={styles.date}>{t('date')}</p>
                 </div>
             </div>
         </div>
