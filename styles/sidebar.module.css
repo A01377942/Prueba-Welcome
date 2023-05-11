@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans:wght@200;400;600;800&display=swap');
+
+.sidebar {
+  position: absolute;
+  width: 25%;
+  height: 100vh;
+  left: -30px;
+  top: 0px;
+
+  background: rgba(29, 68, 104, 0.1);
+  border-radius: 0px 30px 30px 0px;
+}
+
+.backgroundImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(https://images.pexels.com/photos/1078983/pexels-photo-1078983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.95;
+  border-radius: 30px;
+}
+
+.container{
+  position: absolute;
+  width: 70%;
+  height: auto;
+  top: 30%;
+  left: 16%;
+
+  background: rgba(66, 96, 124, 0.75);
+  box-shadow: 8px 1px 13px rgba(0, 0, 0, 0.25);
+  border-radius: 19px;
+}
+
+.userIcon{
+  position: relative;
+  top: -2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.options{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexContainer{
+  margin-top: -50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.settings{
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  text-decoration-line: underline;
+
+  color: #FFFFFF;
+  margin-left: 5%;
+}
+
+.welcome{
+  padding-top: 35px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.spanish, .english{
+  background-color: transparent;
+  border: none;
+
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.spanish:hover, .english:hover{
+  color: #D8BC8B;
+}
+
+.active{
+  background-color: transparent;
+  border: none;
+  color: #D8BC8B;
+}
+
+.signin{
+  box-sizing: border-box;
+  border: 1px solid #FFFFFF;
+  border-radius: 35px;
+  background-color: transparent;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px 15px;
+
+  color: #FFFFFF;
+}
+
+.signin:hover{
+  background: rgba(66, 96, 124, 0.75);
+}
+
+.datetime{
+  font-family: 'Nunito Sans'; 
+  font-weight: 400;
+  color: #FFFFFF;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time{
+  font-size: 24px;
+}
+
+.date{
+  font-size: 16px;
+  text-transform: capitalize;
+  margin-top: -20px;
+}
+
+.language{
+  width: 22%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0px 40px 0px;
+}
+
+.language a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Nunito Sans';
+}
+
+
+@media screen and (max-width: 1780px) {
+  .sidebar{
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .sidebar{
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 758px) {
+  .sidebar{
+    width: 40%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .sidebar{
+    display: block;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    border-radius: 0px;
+  }
+  .backgroundImage{
+    border-radius: 0px;
+  }
+}
